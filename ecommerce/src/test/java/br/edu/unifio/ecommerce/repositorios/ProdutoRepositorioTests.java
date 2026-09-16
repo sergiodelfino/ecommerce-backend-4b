@@ -74,6 +74,6 @@ public class ProdutoRepositorioTests {
         produtoRepositorio.save(produto);
 
         assertTrue(produtoRepositorio.existsById(produto.getId()));
-        assertEquals("Nome Teste", produtoRepositorio.findById(produto.getId()).orElseThrow());
+        assertEquals("Nome Teste", produtoRepositorio.findById(produto.getId()).orElseThrow().getNome());
     } 
 }
