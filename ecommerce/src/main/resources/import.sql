@@ -44,7 +44,7 @@ insert into item_pedido (quantidade, valor_unitario, pedido_id_pedido, produto_i
 insert into item_pedido (quantidade, valor_unitario, pedido_id_pedido, produto_id) values (1, 120.00, 2, 3);
 insert into item_pedido (quantidade, valor_unitario, pedido_id_pedido, produto_id) values (1, 650.00, 3, 4);
 insert into item_pedido (quantidade, valor_unitario, pedido_id_pedido, produto_id) values (1, 3500.00, 4, 1);
-insert into item_pedido (quantidade, valorunitario, pedido_id_pedido, produto_id) values (1, 100.00, 5, 5);
+insert into item_pedido (quantidade, valor_unitario, pedido_id_pedido, produto_id) values (1, 100.00, 5, 5);
 
 insert into pagamento (valor, data, status, tipo, pedido_id_pedido) values (3580.00, '2026-09-01 10:05:00', 'Aprovado', 'Cartao', 1);
 insert into pagamento (valor, data, status, tipo, pedido_id_pedido) values (120.00, '2026-09-02 11:35:00', 'Aprovado', 'Pix', 2);
