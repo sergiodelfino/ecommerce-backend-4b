@@ -10,6 +10,7 @@ import br.edu.unifio.ecommerce.repositorios.ProdutoRepositorio;
 
 import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 
 @RestController
@@ -24,5 +25,10 @@ public class ProdutoRecurso {
     @GetMapping 
     public List<Produto> listar () {
         return produtoRepositorio.findAll(Sort.by("nome"));
+    }
+
+    @GetMapping ("{id}")
+    public Produto buscarPorId (@PathVariable  Integer id) {
+        return produtoRepositorio.findById(id).orElseThrow();
     }
 }
